@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<p:AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <p:children>
+      <p:AnchorPane layoutX="0.8" prefHeight="590.0" prefWidth="146.0" style="-fx-background-color: #5786d7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <p:children>
+            <p:FontAwesomeIconView glyphName="SIGN_OUT" layoutX="22.0" layoutY="551.0" size="40" />
+            <p:FontAwesomeIconView glyphName="CUBE" layoutX="28.0" layoutY="142.0" selectionFill="#f5f5f5" text="" wrappingWidth="20.0" />
+            <p:FontAwesomeIconView glyphName="SETTING" layoutX="28.0" layoutY="298.0" wrappingWidth="20.0" />
+            <p:FontAwesomeIconView glyphName="LIST" layoutX="28.0" layoutY="244.0" wrappingWidth="20.0" />
+            <p:FontAwesomeIconView glyphName="SHOPPING_CART" layoutX="28.0" layoutY="201.0" wrappingWidth="20.0" />
+            <p:FontAwesomeIconView glyphName="DASHBOARD" layoutX="28.0" layoutY="95.0" wrappingWidth="20.0" />
+            <p:FontAwesomeIconView layoutX="47.0" layoutY="45.0" rotate="57.3" size="30" />
+            <p:Button layoutX="62.0" layoutY="521.0" mnemonicParsing="false" text="SIGNOUT" />
+            <p:Button layoutX="57.0" layoutY="78.0" mnemonicParsing="false" text="Dashboard" textFill="#e8c317" />
+            <p:Button layoutX="57.0" layoutY="128.0" mnemonicParsing="false" text="Products" />
+            <p:Button layoutX="55.0" layoutY="174.0" mnemonicParsing="false" text="Orders" AnchorPane.leftAnchor="55.0" />
+            <p:Button layoutX="53.0" layoutY="224.0" mnemonicParsing="false" text="Membership" />
+            <p:Button layoutX="53.0" layoutY="278.0" mnemonicParsing="false" text="settings" />
+         </p:children>
+      </p:AnchorPane>
+      <p:AnchorPane layoutX="140.8" layoutY="2.0" prefHeight="590.0" prefWidth="601.0" style="-fx-background-color: #09acdee5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="140.39999999999998" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <p:children>
+            <p:AnchorPane layoutX="101.0" layoutY="129.0" prefHeight="590.0" prefWidth="602.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <p:children>
+                  <p:AnchorPane prefHeight="84.0" prefWidth="602.0" style="-fx-background-color: #17eac3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.39999999999997726" AnchorPane.topAnchor="0.0">
+                  <p:TextField layoutX="40.0" layoutY="30.0" prefHeight="41.0" prefWidth="371.0" />
+                  <p:Button layoutX="411.0" layoutY="35.0" mnemonicParsing="false" />
+                  <p:FontAwesomeIconView glyphName="SEARCH" layoutX="429.0" layoutY="54.0" />
+                  < ="566.0" layoutY="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Image url="@3280255.png" />
+
+               </p:children>
+                  <p:AnchorPane prefHeight="84.0" prefWidth="602.0" style="-fx-background-color: #17eac3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.39999999999997726" AnchorPane.topAnchor="0.0">
+                  <p:TextField layoutX="40.0" layoutY="30.0" prefHeight="41.0" prefWidth="371.0" />
+                  <p:Button layoutX="411.0" layoutY="35.0" mnemonicParsing="false" />
+                  <p:FontAwesomeIconView glyphName="SEARCH" layoutX="429.0" layoutY="54.0" />
+                  < ="566.0" layoutY="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Image url="@3280255.png" />
+
+                  </p:AnchorPane>
+                  <AnchorPane layoutX="45.0" layoutY="85.0" prefHeight="506.0" prefWidth="602.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+                     <children>
+                        <AnchorPane layoutX="116.0" layoutY="76.0" prefHeight="505.2" prefWidth="602.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="165.0" prefHeight="505.0" prefWidth="200.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <AnchorPane layoutX="172.0" layoutY="63.0" prefHeight="587.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView layoutX="14.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Cap.PNG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView layoutX="307.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Captu.PNG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="175.0" fitWidth="175.0" layoutX="14.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@CP2.PNG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="181.0" fitWidth="219.0" layoutX="298.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@CaptureKLSCIS123.PNG" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="23.0" layoutY="291.0" text="Walking shoe">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="23.0" layoutY="317.0" text="\$45">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="307.0" layoutY="276.0" text="Women's shoe">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="298.0" layoutY="529.0" text="Men's shoe">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="529.0" text="White shoe">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="307.0" layoutY="299.0" text="\$34">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="555.0" text="\$56">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="298.0" layoutY="555.0" text="\$145">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="189.0" layoutY="305.0" mnemonicParsing="false" text="EDIT" />
+                                    <Button layoutX="496.0" layoutY="296.0" mnemonicParsing="false" text="EDIT" />
+                                    <Button layoutX="462.0" layoutY="540.0" mnemonicParsing="false" text="EDIT" />
+                                    <Button layoutX="152.0" layoutY="549.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="54.0" text="EDIT" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </p:children>
+            </p:AnchorPane>
+         </p:children>
+      </p:AnchorPane>
+   </children>
+</AnchorPane>
