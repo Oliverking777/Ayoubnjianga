@@ -1,5 +1,6 @@
 
-package com.ecommerceapp.ecommerceapp;public class OrderItem {
+package com.ecommerceapp.ecommerceapp;
+public class OrderItem {
 
     private @NotNull double price;
     private @NotNull int quantity;
