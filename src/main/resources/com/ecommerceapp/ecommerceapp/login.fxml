@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="520.0" maxWidth="691.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="691.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.loginController">
+<AnchorPane maxHeight="520.0" maxWidth="691.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="691.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller=" com.ecommerceapp.ecommerceapp.Logincontroller">
    <children>
       <Label layoutX="399.0" layoutY="14.0" text="LOGIN FORM" textFill="#04252e">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="330.0" layoutY="131.0" text="Email :">
+      <Label layoutX="321.0" layoutY="131.0" text="Username">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -24,8 +26,8 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="text1" layoutX="432.0" layoutY="131.0" prefHeight="26.0" prefWidth="214.0" promptText="address email" />
-      <TextField fx:id="text2" layoutX="432.0" layoutY="181.0" prefHeight="26.0" prefWidth="214.0" promptText="e.g zzxjisi.pjfkl@#" />
+      <TextField fx:id="tf_username" layoutX="432.0" layoutY="131.0" prefHeight="26.0" prefWidth="214.0" promptText="username" text="username" />
+      <TextField fx:id="tf_password" layoutX="432.0" layoutY="181.0" prefHeight="26.0" prefWidth="214.0" promptText="e.g zzxjisi.pjfkl@#" text="password" />
       <Button fx:id="logingBtn" layoutX="321.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#loging" prefHeight="42.0" prefWidth="333.0" text="LOGIN" textFill="#e5a607">
          <font>
             <Font name="System Bold" size="19.0" />
@@ -46,5 +48,15 @@
          </children>
       </AnchorPane>
       <FontAwesomeIconView fill="#035e2e" glyphName="USER" layoutX="452.0" layoutY="86.0" size="40" wrappingWidth="13.300000190734863" />
+      <Label layoutX="399.0" layoutY="463.0" text="Not a user">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="signBtn1" layoutX="501.0" layoutY="456.0" mnemonicParsing="false" onMouseClicked="#loging" prefHeight="42.0" prefWidth="111.0" text="Signup" textFill="#e5a607">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

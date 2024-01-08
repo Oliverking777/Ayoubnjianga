@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="628.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="628.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerceapp.ecommerceapp.signupcontroller">
    <children>
       <Label layoutX="226.0" layoutY="22.0" prefHeight="35.0" prefWidth="101.0" text="SIGN UP">
          <font>
@@ -40,17 +40,25 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="116.0" layoutY="161.0" prefHeight="26.0" prefWidth="299.0" />
-      <TextField layoutX="112.0" layoutY="249.0" prefHeight="26.0" prefWidth="308.0" promptText="e.g jame@gmail.com" />
-      <TextField layoutX="132.0" layoutY="301.0" prefHeight="26.0" prefWidth="290.0" promptText="e.g oisoijciscu@.#" />
+      <TextField fx:id="tf_name" layoutX="116.0" layoutY="161.0" prefHeight="26.0" prefWidth="299.0" />
+      <TextField fx:id="tf_email" layoutX="112.0" layoutY="249.0" prefHeight="26.0" prefWidth="308.0" promptText="e.g jame@gmail.com" />
+      <TextField fx:id="tf_password" layoutX="132.0" layoutY="301.0" prefHeight="26.0" prefWidth="290.0" promptText="e.g oisoijciscu@.#" />
       <TextField layoutX="189.0" layoutY="344.0" prefHeight="26.0" prefWidth="234.0" promptText="e.g oisoijciscu@.#" />
-      <TextField layoutX="141.0" layoutY="192.0" prefHeight="26.0" prefWidth="278.0" />
-      <Button layoutX="243.0" layoutY="457.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="128.0" text="Sign-up" />
+      <TextField fx:id="tf_username" layoutX="141.0" layoutY="192.0" prefHeight="26.0" prefWidth="278.0" />
+      <Button fx:id="button_signup" layoutX="226.0" layoutY="419.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="128.0" text="Signup" />
       <ImageView fitHeight="57.0" fitWidth="67.0" layoutX="249.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@3280255.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="444.0" layoutY="31.0" prefHeight="551.0" prefWidth="191.0" AnchorPane.bottomAnchor="31.799999999999955" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="444.0" layoutY="31.0" prefHeight="551.0" prefWidth="191.0" AnchorPane.bottomAnchor="31.799999999999955" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="loginbtn" layoutX="-37.0" layoutY="493.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="128.0" text="Login" />
+         </children></AnchorPane>
+      <Label layoutX="204.0" layoutY="499.0" text="I already have  an account" textFill="#0d29ddbd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
