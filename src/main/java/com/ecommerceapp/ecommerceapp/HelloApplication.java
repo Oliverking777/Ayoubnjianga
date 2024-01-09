@@ -2,6 +2,7 @@ package com.ecommerceapp.ecommerceapp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.jetbrains.annotations.NotNull;
@@ -13,7 +14,7 @@ public class HelloApplication extends Application {
     @Override
     public void start( Stage stage) throws IOException {
         FXMLLoader fxmlLoader;
-        fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("signup form.fxml"));
+        fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 400, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);

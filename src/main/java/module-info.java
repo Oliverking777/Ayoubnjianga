@@ -9,6 +9,7 @@ module com.ecommerceapp.ecommerceapp {
     requires eu.hansolo.tilesfx;
     requires java.sql;
     requires annotations;
+    requires java.desktop;
 
     opens com.ecommerceapp.ecommerceapp to javafx.fxml;
     exports com.ecommerceapp.ecommerceapp;
