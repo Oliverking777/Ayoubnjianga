@@ -2,26 +2,22 @@
 package com.ecommerceapp.ecommerceapp;
 public class OrderItem {
 
-    private @NotNull double price;
-    private @NotNull int quantity;
-    private @NotNull int orderId;
-    private @NotNull int productId;
+    private int orderID;
+    private Product product;
+    private int quantity;
+    private double subtotal;
 
-    public OrderItem() {}
+    public OrderItem(Product product,int quantity,int orderID){
 
-    public OrderItem(@NotNull double price, @NotNull int quantity, @NotNull int orderId, @NotNull int productId) {
-        this.price = price;
-        this.quantity = quantity;
-        this.orderId = orderId;
-        this.productId = productId;
+        this.quantity=quantity;
+        this.orderID=orderID;
+        this.product=product;
+        updateSubtotal();
+
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
+    public int getOrderID() {
+        return orderID;
     }
 
     public int getQuantity() {
@@ -32,21 +28,19 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
-    public int getOrderId() {
-        return orderId;
+    public Product getProduct() {
+        return product;
     }
 
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
-    public int getProductId() {
-        return productId;
+    public double getSubtotal() {
+        return subtotal;
     }
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void updateSubtotal(){
+        subtotal=product.getPrice() * quantity;
     }
-
-
 }
