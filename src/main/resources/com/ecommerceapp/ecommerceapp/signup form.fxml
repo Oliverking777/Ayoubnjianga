@@ -47,9 +47,6 @@
       <TextField fx:id="tf_username" layoutX="141.0" layoutY="192.0" prefHeight="26.0" prefWidth="278.0" />
       <Button fx:id="button_signup" layoutX="226.0" layoutY="419.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="128.0" text="Signup" />
       <ImageView fitHeight="57.0" fitWidth="67.0" layoutX="249.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@3280255.png" />
-         </image>
       </ImageView>
       <AnchorPane layoutX="444.0" layoutY="31.0" prefHeight="551.0" prefWidth="191.0" AnchorPane.bottomAnchor="31.799999999999955" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>

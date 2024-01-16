@@ -26,7 +26,7 @@ public class Logincontroller implements Initializable {
         button_logout.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DButils.changeScene(event, "login.fxml ", "Logout", null);
+                DButils.changeScene(event, "Loginform.fxml ", "Loginform", null);
 
             }
 

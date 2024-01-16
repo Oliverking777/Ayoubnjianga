@@ -20,8 +20,10 @@ public class DButils {
             try {
                 FXMLLoader loader = new FXMLLoader(DButils.class.getResource(fxmlfile));
                 root = loader.load();
-                Logincontroller logincontroller = loader.getController();
-                logincontroller.setUserinformation(username);
+                Product product = loader.getController();
+                product.setUserinformation(username);
+                /*Logincontroller logincontroller = loader.getController();
+                logincontroller.setUserinformation(username);*/
             }catch (IOException e){
                 e.printStackTrace();
             }
@@ -39,32 +41,33 @@ public class DButils {
         stage.show();;
     }
 
-    public  static void signUpUser(ActionEvent event, String name, String username, String email, String password ){
+    public  static void signUpUser(ActionEvent event, String name, String username, String email, String password ) throws ClassNotFoundException {
         Connection connection = null;
         PreparedStatement psInsert = null;
         PreparedStatement psCheckUserExists = null;
         ResultSet resultSet = null;
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_ecom", "root","toor");
-             psCheckUserExists = connection.prepareStatement("SELECT + FROM users WHERE username = ?");
-             psCheckUserExists.setString(2, username);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_ecom", "root","");
+            psCheckUserExists = connection.prepareStatement("SELECT * FROM users WHERE  name = ?");
+            psCheckUserExists.setString(1, name);
              resultSet = psCheckUserExists.executeQuery();
 
              if(resultSet.isBeforeFirst()) {
                  System.out.println("user already exist!");
                  Alert alert = new Alert(Alert.AlertType.ERROR);
-                 alert.setContentText("you cannot use this username");
+                 alert.setContentText("you cannot use this name");
                  alert.show();
              }else {
-                 psInsert = connection.prepareStatement("INSERT INTO users (name, username, email, password VALUES (?, ?, ?, ?)");
+                 psInsert = connection.prepareStatement("INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)");
                  psInsert.setString(1, name);
                  psInsert.setString(2, username);
                  psInsert.setString(3, email);
                  psInsert.setString(4, password);
                  psInsert.executeUpdate();
 
-                 changeScene(event, "Product.fxml", "Signup", username );
+                 changeScene(event, "product.fxml", "product", name);
              }
 
 
@@ -103,14 +106,15 @@ public class DButils {
 
 
     }
-    public static  void logInUser(ActionEvent event, String username, String password) {
+    public static  void logInUser(ActionEvent event, String email, String password) throws ClassNotFoundException {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
+        Class.forName("com.mysql.cj.jdbc.Driver");
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_ecom", "root", "toor");
-            preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE username = ? ");
-            preparedStatement.setString(2, username);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_ecom", "root", "");
+            preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE  name = ? ");
+            preparedStatement.setString(1, email);
             resultSet = preparedStatement.executeQuery();
 
             if (!resultSet.isBeforeFirst()) {
@@ -123,7 +127,7 @@ public class DButils {
                     String retrievedPassword = resultSet.getString("password");
 
                     if (retrievedPassword.equals(password)) {
-                        changeScene(event, "product.fxml", "LOGIN", username);
+                        changeScene(event, "product.fxml", "product", email);
 
                     }else {
                         System.out.println("Password did not match!");

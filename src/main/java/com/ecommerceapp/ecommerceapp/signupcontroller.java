@@ -1,6 +1,7 @@
 package com.ecommerceapp.ecommerceapp;
 
 
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -32,6 +33,9 @@ public class signupcontroller implements Initializable {
     @FXML
     private TextField tf_password;
 
+   public signupcontroller() {
+
+   }
     public signupcontroller(Button buttonSigup) {
         button_sigup = buttonSigup;
     }
@@ -45,7 +49,11 @@ public class signupcontroller implements Initializable {
             public void handle(ActionEvent event) {
 
                 if (!tf_name.getText().trim().isEmpty() && !tf_username.getText().trim().isEmpty() && !tf_email.getText().trim().isEmpty() && !tf_password.getText().trim().isEmpty()) {
-                    DButils.signUpUser(event, tf_name.getText(),tf_username.getText(), tf_email.getText(), tf_password.getText());
+                    try {
+                        DButils.signUpUser(event, tf_name.getText(),tf_username.getText(), tf_email.getText(), tf_password.getText());
+                    } catch (ClassNotFoundException e) {
+                        throw new RuntimeException(e);
+                    }
                 }else {
                     System.out.println("please fill in all information");
                     Alert alert = new Alert(Alert.AlertType.ERROR);

@@ -10,6 +10,7 @@ module com.ecommerceapp.ecommerceapp {
     requires java.sql;
     requires annotations;
     requires java.desktop;
+    requires mysql.connector.j;
 
     opens com.ecommerceapp.ecommerceapp to javafx.fxml;
     exports com.ecommerceapp.ecommerceapp;

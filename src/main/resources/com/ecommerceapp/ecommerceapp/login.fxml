@@ -9,7 +9,8 @@
 <?import javafx.scene.shape.Box?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="520.0" maxWidth="691.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="691.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller=" com.ecommerceapp.ecommerceapp.Logincontroller">
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane maxHeight="520.0" maxWidth="691.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="691.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerceapp.ecommerceapp.controller">
    <children>
       <Label layoutX="399.0" layoutY="14.0" text="LOGIN FORM" textFill="#04252e">
          <font>
@@ -28,7 +29,7 @@
       </Label>
       <TextField fx:id="tf_username" layoutX="432.0" layoutY="131.0" prefHeight="26.0" prefWidth="214.0" promptText="username" text="username" />
       <TextField fx:id="tf_password" layoutX="432.0" layoutY="181.0" prefHeight="26.0" prefWidth="214.0" promptText="e.g zzxjisi.pjfkl@#" text="password" />
-      <Button fx:id="logingBtn" layoutX="321.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#loging" prefHeight="42.0" prefWidth="333.0" text="LOGIN" textFill="#e5a607">
+      <Button fx:id="logingBtn" layoutX="321.0" layoutY="304.0" mnemonicParsing="false"  prefHeight="42.0" prefWidth="333.0" text="LOGIN" textFill="#e5a607">
          <font>
             <Font name="System Bold" size="19.0" />
          </font></Button>
@@ -53,7 +54,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="signBtn1" layoutX="501.0" layoutY="456.0" mnemonicParsing="false" onMouseClicked="#loging" prefHeight="42.0" prefWidth="111.0" text="Signup" textFill="#e5a607">
+      <Button fx:id="signBtn1" layoutX="501.0" layoutY="456.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="111.0" text="Signup" textFill="#e5a607">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>

@@ -32,7 +32,12 @@ public class  Registration extends JDialog {
         signupButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                registerUser();;
+                try {
+                    registerUser();
+                } catch (ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
+                ;
             }
         });
         clearButton.addActionListener(new ActionListener() {
@@ -47,12 +52,12 @@ public class  Registration extends JDialog {
 
     }
 
-    private void registerUser() {
+    private void registerUser() throws ClassNotFoundException {
         String name = tfName.getText();
         String username = tfUsername.getText();
         String email = tfEmail.getText();
-        String password = tfPassword.getText();
-        String confirmPassword = tfConfirmPass.getText();
+        String password = String.valueOf(tfPassword.getText());
+        String confirmPassword = String.valueOf(tfConfirmPass.getText());
 
 
         if (name.isEmpty() || username.isEmpty() || email.isEmpty() || password.isEmpty()) {
@@ -62,9 +67,18 @@ public class  Registration extends JDialog {
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
+        if (!password.equals(confirmPassword)) {
+            JOptionPane.showMessageDialog(this,
+                    "Confirm Password do not macth",
+                    "Try again",
+                    JOptionPane.ERROR_MESSAGE);
+            return;
+        }
 
-        User addUserToDatabase = addUserToDatabase(name, username, email, password);
+
+        User user = addUserToDatabase(name, username, email, password);
         if(user != null) {
+            this.user = user;
             dispose();
         }else {
             JOptionPane.showMessageDialog(this,
@@ -77,9 +91,10 @@ public class  Registration extends JDialog {
     }
 
     public User user;
-    private User addUserToDatabase(String name, String username, String email, String password) {
+    private User addUserToDatabase(String name, String username, String email, String password) throws ClassNotFoundException {
         User user = null;
-        final String DB_URL = "http://localhost/phpmyadmin/index.php?route=/sql&db=javafx_ecom&table=users&pos=0";
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        final String DB_URL = "jdbc:mysql://localhost:3306/javafx_ecom?serverTimezone=UTC";
         final String USERNAME = "root";
         final String PASSWORD  = "";
 
@@ -88,7 +103,7 @@ public class  Registration extends JDialog {
             conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 
             Statement stmt = conn.createStatement();
-            String sql = "INSERT INTO users (name, username, eamil, password)" + "VALUES(?, ?, ?, ?)";
+            String sql = "INSERT INTO users (name, username, email, password)" + "VALUES(?, ?, ?, ?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, username);

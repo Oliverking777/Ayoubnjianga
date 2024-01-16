@@ -10,41 +10,43 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
- public class controller implements Initializable {
+public class Loginform implements Initializable {
 
     @FXML
-    private Button logingBtn;
+    private Button button_Login;
 
     @FXML
-    private Button signBtn1;
+    private TextField thEmail;
 
     @FXML
-    private TextField tf_username;
+    private TextField thPassword;
 
     @FXML
-    private TextField tf_password;
+    private Button button_Register;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        logingBtn.setOnAction(new EventHandler<ActionEvent>() {
+
+        button_Login.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+
                 try {
-                    DButils.logInUser(event, tf_username.getText(), tf_password.getText())  ;
+                    DButils.logInUser(event, thEmail.getText(), thPassword.getText());
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
                 }
+
             }
         });
 
-        signBtn1.setOnAction(new EventHandler<ActionEvent>() {
+        button_Register.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DButils.changeScene(event, "signup form.fxml", "Signup", "null" );
+                DButils.changeScene(event, "Signup.fxml", "Signup", null);
             }
         });
-
 
     }
 }
