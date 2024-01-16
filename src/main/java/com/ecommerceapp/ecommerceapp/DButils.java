@@ -50,6 +50,7 @@ public class DButils {
         if (!password.equals(txConPass)) {
             System.out.println("Passwords do no match!");
             Alert alert = new Alert((Alert.AlertType.ERROR) );
+            alert.setContentText("Confirm Password do not match");
             alert.show();
             return;
         }
