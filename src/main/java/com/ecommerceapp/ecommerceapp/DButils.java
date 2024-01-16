@@ -110,23 +110,24 @@ public class DButils {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
-        Class.forName("com.mysql.cj.jdbc.Driver");
+
         try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_ecom", "root", "");
-            preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE  name = ? ");
+            preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE  email = ? ");
             preparedStatement.setString(1, email);
             resultSet = preparedStatement.executeQuery();
 
             if (!resultSet.isBeforeFirst()) {
                 System.out.println("User not found in the database !");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("Provided credendials are incorrect!");
+                alert.setContentText("Provided credentials are incorrect!");
                 alert.show();
             }else {
-                while(resultSet.next()) {
+                while (resultSet.next()) {
                     String retrievedPassword = resultSet.getString("password");
 
-                    if (retrievedPassword.equals(password)) {
+                    if (password.equals(retrievedPassword)) {
                         changeScene(event, "product.fxml", "product", email);
 
                     }else {
@@ -140,19 +141,21 @@ public class DButils {
         }catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            if (resultSet != null) {
-                try {
+            try {
+                if (resultSet != null) {
                     resultSet.close();
-                }catch (SQLException e) {
-                    e.printStackTrace();
-                }
+
             }
-            if (preparedStatement != null) {
-                try {
-                   connection.close();
-                }catch (SQLException e) {
-                    e.printStackTrace();
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+
                 }
+                if (connection != null) {
+                    connection.close();
+                }
+
+            }catch (SQLException e) {
+                e.printStackTrace();
             }
 
         }

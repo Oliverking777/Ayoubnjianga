@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3217568c-6ef9-4448-ad5e-31de24ae036d" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Login.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Loginform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Signup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Loginform.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Signup.fxml" afterDir="false" />
+    <list default="true" id="3217568c-6ef9-4448-ad5e-31de24ae036d" name="Changes" comment="initial commit sigup authentification done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DButils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DButils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Logincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Logincontroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Registration.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Registration.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/signupcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/signupcontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/signup form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/signup form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704839044202</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="initial commit sigup authentification done">
+      <option name="closed" value="true" />
+      <created>1705416500409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705416500409</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +257,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="initial commit sigup authentification done" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit sigup authentification done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

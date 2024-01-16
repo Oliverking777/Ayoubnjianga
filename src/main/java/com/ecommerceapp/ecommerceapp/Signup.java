@@ -9,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import org.controlsfx.tools.Platform;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -76,6 +78,15 @@ public class Signup  implements Initializable {
                 @Override
                 public void handle(ActionEvent event) {
                     DButils.changeScene(event, "Loginform.fxml", "Loginform", null);
+                }
+            });
+
+            button_close.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    Stage stage = (Stage) button_close.getScene().getWindow();
+                    stage.close();
+
                 }
             });
 

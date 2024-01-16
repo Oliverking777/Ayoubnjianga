@@ -25,7 +25,7 @@ public class  Product implements Initializable {
         button_logout.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DButils.changeScene(event, "Loginform.fxml ", "Loginform", null);
+                DButils.changeScene(event, "Loginform.fxml", "Loginform", null);
 
             }
 
