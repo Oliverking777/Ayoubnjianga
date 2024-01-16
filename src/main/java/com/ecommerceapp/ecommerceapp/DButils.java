@@ -41,12 +41,18 @@ public class DButils {
         stage.show();;
     }
 
-    public  static void signUpUser(ActionEvent event, String name, String username, String email, String password ) throws ClassNotFoundException {
+    public  static void signUpUser(ActionEvent event, String name, String username, String email, String password, String txConPass ) throws ClassNotFoundException {
         Connection connection = null;
         PreparedStatement psInsert = null;
         PreparedStatement psCheckUserExists = null;
         ResultSet resultSet = null;
         Class.forName("com.mysql.cj.jdbc.Driver");
+        if (!password.equals(txConPass)) {
+            System.out.println("Passwords do no match!");
+            Alert alert = new Alert((Alert.AlertType.ERROR) );
+            alert.show();
+            return;
+        }
 
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx_ecom", "root","");
@@ -59,7 +65,9 @@ public class DButils {
                  Alert alert = new Alert(Alert.AlertType.ERROR);
                  alert.setContentText("you cannot use this name");
                  alert.show();
-             }else {
+             }
+
+             else {
                  psInsert = connection.prepareStatement("INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)");
                  psInsert.setString(1, name);
                  psInsert.setString(2, username);

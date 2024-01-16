@@ -59,9 +59,9 @@ public class Signup  implements Initializable {
         button_register.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                if (!txName.getText().trim().isEmpty() && !txUsername.getText().trim().isEmpty() && !txEmail.getText().trim().isEmpty() && !txPass.getText().trim().isEmpty()) {
+                if (!txName.getText().trim().isEmpty() && !txUsername.getText().trim().isEmpty() && !txEmail.getText().trim().isEmpty() && !txPass.getText().trim().isEmpty() && !txConPass.getText().trim().isEmpty()){
                     try {
-                        DButils.signUpUser(event, txName.getText(),txUsername.getText(), txEmail.getText(), txPass.getText());
+                        DButils.signUpUser(event, txName.getText(),txUsername.getText(), txEmail.getText(), txPass.getText(), txConPass.getText());
                     } catch (ClassNotFoundException e) {
                         throw new RuntimeException(e);
                     }
