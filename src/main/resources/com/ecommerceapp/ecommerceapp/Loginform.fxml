@@ -4,50 +4,66 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="368.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerceapp.ecommerceapp.Loginform">
-   <children>
-      <AnchorPane layoutX="-1.0" prefHeight="78.0" prefWidth="600.0">
+
+<BorderPane prefHeight="363.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerceapp.ecommerceapp.Loginform">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane prefHeight="409.0" prefWidth="936.0" style="-fx-background-color: GREY BLUE;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="253.0" layoutY="22.0" text="LOGIN" textAlignment="CENTER">
+            <AnchorPane layoutX="-1.0" prefHeight="78.0" prefWidth="936.0">
+               <children>
+                  <Label layoutX="633.0" layoutY="22.0" text="LOGIN" textAlignment="CENTER" textFill="#f2efef">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="423.0" layoutY="118.0" text="Email:" textFill="#ebe2e2">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font size="14.0" />
                </font>
             </Label>
+            <TextField fx:id="thEmail" layoutX="498.0" layoutY="113.0" prefHeight="30.0" prefWidth="411.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="423.0" layoutY="174.0" text="Password:" textFill="#ebe2e2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="thPassword" layoutX="498.0" layoutY="169.0" prefHeight="30.0" prefWidth="417.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="button_Login" layoutX="650.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="643.0" layoutY="360.0" text="i don't have an account!" textFill="#1a21f2" />
+            <Button fx:id="button_Register" layoutX="791.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Register">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="412.0" fitWidth="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Pictures/6310507.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
-      <Label layoutX="29.0" layoutY="138.0" text="Email:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="thEmail" layoutX="97.0" layoutY="133.0" prefHeight="25.0" prefWidth="461.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <Label layoutX="29.0" layoutY="187.0" text="Password:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <PasswordField fx:id="thPassword" layoutX="97.0" layoutY="182.0" prefHeight="25.0" prefWidth="461.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </PasswordField>
-      <Button fx:id="button_Login" layoutX="255.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Login">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <Label layoutX="238.0" layoutY="324.0" text="i don't have an account!" textFill="#1a21f2" />
-      <Button fx:id="button_Register" layoutX="372.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Register">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-   </children>
-</AnchorPane>
+   </top>
+</BorderPane>
