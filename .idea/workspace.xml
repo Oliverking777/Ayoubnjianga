@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3217568c-6ef9-4448-ad5e-31de24ae036d" name="Changes" comment="initial commit sigup authentification done, login Authentification done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/6310507.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/20944201.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/6310507.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/6310507.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DButils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DButils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/20944201.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/20944201.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Loginform.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Loginform.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Signup.fxml" afterDir="false" />
     </list>
@@ -75,11 +77,11 @@
     "jdk.selected.JAVA_MODULE": "21 (2)",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Randy_PC/IdeaProjects/Ayoubnjianga/src/main/java/com/ecommerceapp/ecommerceapp",
-    "last_opened_file_path": "C:/Users/Randy_PC/IdeaProjects/Ayoubnjianga/src/main/java/com/ecommerceapp/ecommerceapp",
+    "last_opened_file_path": "C:/Users/Randy_PC/IdeaProjects/Ayoubnjianga/images",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.folding"
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -89,8 +91,8 @@
       <recent name="java.lang.reflect" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Randy_PC\IdeaProjects\Ayoubnjianga\src\main\java\com\ecommerceapp\ecommerceapp" />
       <recent name="C:\Users\Randy_PC\IdeaProjects\Ayoubnjianga\images" />
+      <recent name="C:\Users\Randy_PC\IdeaProjects\Ayoubnjianga\src\main\java\com\ecommerceapp\ecommerceapp" />
       <recent name="C:\Users\Randy_PC\IdeaProjects\Ayoubnjianga" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -183,6 +185,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
         <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
@@ -260,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705435576704</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="initial commit sigup authentification done, login Authentification done">
+      <option name="closed" value="true" />
+      <created>1705960883418</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705960883419</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

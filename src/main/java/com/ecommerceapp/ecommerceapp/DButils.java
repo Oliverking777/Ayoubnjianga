@@ -37,7 +37,7 @@ public class DButils {
         }
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(title);
-        stage.setScene(new Scene((Parent) root, 600, 400));
+        stage.setScene(new Scene((Parent) root, 936, 409));
         stage.show();;
     }
 

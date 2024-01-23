@@ -49,7 +49,7 @@
             </PasswordField>
             <Button fx:id="button_Login" layoutX="650.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Login">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
             <Label layoutX="643.0" layoutY="360.0" text="i don't have an account!" textFill="#1a21f2" />
@@ -59,9 +59,7 @@
                </font>
             </Button>
             <ImageView fitHeight="412.0" fitWidth="409.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../Pictures/6310507.jpg" />
-               </image>
+               <Image url="6310507.jpg"/>
             </ImageView>
          </children>
       </AnchorPane>

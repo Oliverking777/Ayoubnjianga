@@ -13,14 +13,14 @@
    <children>
       <AnchorPane layoutX="1.0" prefHeight="91.0" prefWidth="690.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label layoutX="219.0" layoutY="28.0" text="REGISTER">
+            <Label layoutX="345.0" layoutY="20.0" text="REGISTER" textFill="#ebe5e5">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="487.0" layoutY="124.0" text=" Name:">
+      <Label layoutX="487.0" layoutY="124.0" text=" Name:" textFill="#e4dddd">
          <font>
             <Font size="14.0" />
          </font>
@@ -30,7 +30,7 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Label layoutX="487.0" layoutY="169.0" text="Username:">
+      <Label layoutX="487.0" layoutY="169.0" text="Username:" textFill="#e4dddd">
          <font>
             <Font size="14.0" />
          </font>
@@ -40,7 +40,7 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Label layoutX="491.0" layoutY="216.0" text="Email:">
+      <Label layoutX="491.0" layoutY="216.0" text="Email:" textFill="#e4dddd">
          <font>
             <Font size="14.0" />
          </font>
@@ -50,7 +50,7 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Label layoutX="489.0" layoutY="259.0" text="Password:">
+      <Label layoutX="489.0" layoutY="259.0" text="Password:" textFill="#e4dddd">
          <font>
             <Font size="14.0" />
          </font>
@@ -60,7 +60,7 @@
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Label layoutX="480.0" layoutY="302.0" text="Confirm Password:">
+      <Label layoutX="480.0" layoutY="302.0" text="Confirm Password:" textFill="#e4dddd">
          <font>
             <Font size="14.0" />
          </font>
@@ -72,24 +72,22 @@
       </PasswordField>
       <Button fx:id="button_register" layoutX="667.0" layoutY="359.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Resgister">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold Italic" size="14.0" />
          </font>
       </Button>
       <Button fx:id="button_close" layoutX="849.0" layoutY="359.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Close">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold Italic" size="14.0" />
          </font>
       </Button>
       <Label fx:id="ftreload" layoutX="795.0" layoutY="436.0" text="i already have an account!" textFill="#123ec4" />
       <Button fx:id="button_login" layoutX="944.0" layoutY="429.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Login">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold Italic" size="14.0" />
          </font>
       </Button>
       <ImageView fitHeight="478.0" fitWidth="472.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../../Pictures/20944201.jpg" />
-         </image>
+         <Image url="20944201.jpg"/>
       </ImageView>
    </children>
 </AnchorPane>
