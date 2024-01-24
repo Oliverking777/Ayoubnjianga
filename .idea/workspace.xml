@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3217568c-6ef9-4448-ad5e-31de24ae036d" name="Changes" comment="initial commit sigup authentification done, login Authentification done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/6310507.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/6310507.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DButils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DButils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/20944201.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/20944201.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Loginform.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Loginform.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/Signup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705960883419</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="initial commit sigup authentification done, login Authentification done">
+      <option name="closed" value="true" />
+      <created>1705970310488</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705970310488</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

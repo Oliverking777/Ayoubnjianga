@@ -43,13 +43,13 @@ public class Signup  implements Initializable {
     @FXML
     private TextField txConPass;
 
-    public Signup() {
+   /* public Signup() {
 
     }
 
     public Signup(Button buttonregister) {
         button_register = buttonregister;
-    }
+    }*/
 
 
 
