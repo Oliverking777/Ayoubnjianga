@@ -14,6 +14,7 @@ import javafx.scene.control.Alert.AlertType;
 import java.util.Optional;
 
 import static com.ecommerceapp.ecommerceapp.Data.cID;
+import static sun.security.pkcs11.wrapper.Functions.getId;
 
 public class orderitemController {
 
@@ -85,6 +86,11 @@ public class orderitemController {
 
         return listData;
     }
+
+    private void customerID() {
+
+    }
+
     private ObservableList<productData> menuOrderListData;
 
 
@@ -105,7 +111,7 @@ public class orderitemController {
             return;
         }
         // TO GET THE ID PER ORDER
-        getId = prod.getId();
+        Object getId = prod.getId();
 
 
     }
@@ -145,6 +151,7 @@ public class orderitemController {
 
     public void menuRemoveBtn() {
 
+        int getId = 0;
         if (getId == 0) {
             alert = new Alert(AlertType.ERROR);
             alert.setTitle("Error Message");

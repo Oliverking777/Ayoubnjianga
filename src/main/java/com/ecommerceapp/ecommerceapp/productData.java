@@ -28,6 +28,8 @@ public class productData {
         this.date = date;
     }
 
+
+
     public Integer getId() {
         return Id;
     }

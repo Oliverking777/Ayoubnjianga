@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3217568c-6ef9-4448-ad5e-31de24ae036d" name="Changes" comment="OrderItem.java class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/customersData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/orderitemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Controller/EcommerceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Controller/OrderDetailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/DTO/order/order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/dao/OrderDetailDoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/entity/OrderDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/service/OrderDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/orderitemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/orderitemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/productData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerceapp/ecommerceapp/productData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/orderitem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ecommerceapp/ecommerceapp/orderitem.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +172,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706100137776</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="OrderItem.java class">
+      <option name="closed" value="true" />
+      <created>1706100393107</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706100393107</updated>
+    </task>
+    <task id="LOCAL-00008" summary="OrderItem.java class">
+      <option name="closed" value="true" />
+      <created>1706100755794</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706100755794</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
