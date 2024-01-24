@@ -11,4 +11,14 @@ public class HelloController {
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
+
+    private void displayTotal(){
+
+        String total=" SELECT COUNT(price) FROM customer WHERE customer_id=" + cID;
+
+        
+
+    }
+
+    private int cID;
 }

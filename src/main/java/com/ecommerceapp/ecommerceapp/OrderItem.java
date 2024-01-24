@@ -1,46 +1,17 @@
 
 package com.ecommerceapp.ecommerceapp;
 public class OrderItem {
+    private int id;
 
-    private int orderID;
-    private Product product;
+    private productData product;
+
     private int quantity;
-    private double subtotal;
 
-    public OrderItem(Product product,int quantity,int orderID){
-
-        this.quantity=quantity;
-        this.orderID=orderID;
-        this.product=product;
-        updateSubtotal();
-
-    }
-
-    public int getOrderID() {
-        return orderID;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
+    private double Subtotal;
 
     public double getSubtotal() {
-        return subtotal;
+        return Subtotal;
     }
 
-    public void updateSubtotal(){
-        subtotal=product.getPrice() * quantity;
-    }
+
 }
